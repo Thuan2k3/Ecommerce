@@ -1,0 +1,66 @@
+# === GLOBAL IGNORE ===
+*.log
+*.tmp
+*.swp
+*.bak
+*.DS_Store
+*.idea/
+*.iml
+*.class
+
+# === BACKEND (Spring Boot + Maven) ===
+
+# Maven target directory
+/backend/target/
+/**/target/
+
+# Maven wrapper
+/backend/.mvn/
+!/backend/.mvn/wrapper/maven-wrapper.jar
+/backend/mvnw
+/backend/mvnw.cmd
+
+# Java archives
+*.jar
+*.war
+*.ear
+
+# IDE files
+/backend/.settings/
+/backend/.project
+/backend/.classpath
+/backend/.vscode/
+/backend/*.iws
+
+# Ignore sensitive properties
+/backend/src/main/resources/application.properties
+/backend/src/main/resources/application-*.properties
+
+# Allow example file
+!/backend/src/main/resources/application.properties.example
+
+# === FRONTEND (ReactJS) ===
+
+# Node dependencies
+/frontend/node_modules/
+
+# Build outputs
+/frontend/build/
+/frontend/dist/
+
+# Environment variables
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Logs
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# === OS / MISC ===
+Thumbs.db
+ehthumbs.db
+desktop.ini
