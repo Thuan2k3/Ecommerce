@@ -39,7 +39,7 @@ public class User {
     private UserRole role;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<OrderItem> oderItemList;
+    private List<OrderItem> orderItemList;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Address address;
