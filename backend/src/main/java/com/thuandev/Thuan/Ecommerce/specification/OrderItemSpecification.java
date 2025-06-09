@@ -16,7 +16,7 @@ public class OrderItemSpecification {
     }
 
     /** Specification to filter order items by data range */
-    public static Specification<OrderItem> createBetween(LocalDateTime startDate, LocalDateTime endDate){
+    public static Specification<OrderItem> createdBetween(LocalDateTime startDate, LocalDateTime endDate){
         return ((root, query, criteriaBuilder) -> {
             if(startDate != null && endDate !=null){
                 return criteriaBuilder.between(root.get("createdAt"), startDate, endDate);

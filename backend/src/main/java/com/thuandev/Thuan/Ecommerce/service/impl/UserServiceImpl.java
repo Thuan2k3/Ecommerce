@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
     private final EntityDtoMapper entityDtoMapper;
 
     @Override
-    public Response register(UserDto registrationRequest) {
+    public Response registerUser(UserDto registrationRequest) {
         UserRole role = UserRole.USER;
 
         if (registrationRequest.getRole() != null && registrationRequest.getRole().equalsIgnoreCase("admin")) {
