@@ -25,7 +25,7 @@ This is a backend API for a simple e-commerce platform built with **Spring Boot*
 ---
 
 ## 🗂️ Project Structure
-
+```
 ├── config/ → Security, JWT, CORS config
 ├── controller/ → REST API endpoints
 ├── dto/ → Data Transfer Objects
@@ -38,7 +38,7 @@ This is a backend API for a simple e-commerce platform built with **Spring Boot*
 ├── service/ → Business logic implementation
 ├── specification/ → Query specifications
 └── ThuanEcommerceApplication.java → App entry point
-
+```
 ## 📬 Sample API Endpoints
 
 ### 🔐 Auth
